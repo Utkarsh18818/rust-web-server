@@ -1,5 +1,6 @@
 #[warn(unused_imports)]
 use actix_web::{get, web, App, HttpServer, Responder};
+use serde::Serialize;
 
 #[get("/home")]
 async fn home()-> impl Responder{
@@ -7,10 +8,22 @@ async fn home()-> impl Responder{
     response
 }
 #[get("/hello/{firstname}/{lastname}")]
-async fn hello_user(params: crate::web::Path<(String,String)>)-> impl Responder{
-    let response: String = format!("Hello {} {}",params.0 , params.1);
-    response
+async fn hello_user(params: web::Path<(String, String)>) -> impl Responder {
+    let response = User::new(params.0.clone(), params.1.clone());
+    web::Json(response)
 }
+
+#[derive(Serialize)]
+struct User{
+    first_name:String,
+    last_name:String
+}
+impl User {
+    fn new(firstname:String , lastname:String)-> Self {
+        Self{ first_name : firstname, last_name : lastname}
+    }
+}
+
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {

@@ -1,4 +1,4 @@
-use actix_web::{App, HttpServer};
+use actix_web::{App, HttpServer , web::Data};
 mod routes;
 use routes::{home_config, hello_user_config};
 
@@ -15,7 +15,7 @@ async fn main() -> std::io::Result<()> {
 
     let server = HttpServer::new(move || {
         App::new()
-            .app_data(database_pool.clone()) // corrected variable name
+            .app_data(Data::new(database_pool.clone())) // corrected variable name
             .configure(home_config)
             .configure(hello_user_config)
             .configure(create_user_config)

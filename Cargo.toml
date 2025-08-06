@@ -7,3 +7,4 @@ edition = "2024"
 actix-web = "4.11.0"
 serde = {version = "1.0.219",features = ["derive"]}
 tokio = {version="*" , features = ["macros","rt-multi-thread"] }
+sqlx = {version="*" , features=["mysql","runtime-tokio-native-tls"]}

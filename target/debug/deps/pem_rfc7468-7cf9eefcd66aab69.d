@@ -1,0 +1,10 @@
+C:\Users\DELL\hello\actix-web-server\target\debug\deps\pem_rfc7468-7cf9eefcd66aab69.d: C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pem-rfc7468-0.7.0\src\lib.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pem-rfc7468-0.7.0\src\decoder.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pem-rfc7468-0.7.0\src\encoder.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pem-rfc7468-0.7.0\src\error.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pem-rfc7468-0.7.0\src\grammar.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pem-rfc7468-0.7.0\src\../README.md
+
+C:\Users\DELL\hello\actix-web-server\target\debug\deps\libpem_rfc7468-7cf9eefcd66aab69.rmeta: C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pem-rfc7468-0.7.0\src\lib.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pem-rfc7468-0.7.0\src\decoder.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pem-rfc7468-0.7.0\src\encoder.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pem-rfc7468-0.7.0\src\error.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pem-rfc7468-0.7.0\src\grammar.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pem-rfc7468-0.7.0\src\../README.md
+
+C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pem-rfc7468-0.7.0\src\lib.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pem-rfc7468-0.7.0\src\decoder.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pem-rfc7468-0.7.0\src\encoder.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pem-rfc7468-0.7.0\src\error.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pem-rfc7468-0.7.0\src\grammar.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pem-rfc7468-0.7.0\src\../README.md:

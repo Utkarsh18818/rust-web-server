@@ -1,0 +1,11 @@
+C:\Users\DELL\hello\actix-web-server\target\debug\deps\futures_task-ecc531f5e570f7c2.d: C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-task-0.3.31\src\lib.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-task-0.3.31\src\spawn.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-task-0.3.31\src\arc_wake.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-task-0.3.31\src\waker.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-task-0.3.31\src\waker_ref.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-task-0.3.31\src\future_obj.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-task-0.3.31\src\noop_waker.rs
+
+C:\Users\DELL\hello\actix-web-server\target\debug\deps\libfutures_task-ecc531f5e570f7c2.rmeta: C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-task-0.3.31\src\lib.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-task-0.3.31\src\spawn.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-task-0.3.31\src\arc_wake.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-task-0.3.31\src\waker.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-task-0.3.31\src\waker_ref.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-task-0.3.31\src\future_obj.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-task-0.3.31\src\noop_waker.rs
+
+C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-task-0.3.31\src\lib.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-task-0.3.31\src\spawn.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-task-0.3.31\src\arc_wake.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-task-0.3.31\src\waker.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-task-0.3.31\src\waker_ref.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-task-0.3.31\src\future_obj.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-task-0.3.31\src\noop_waker.rs:

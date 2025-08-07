@@ -19,10 +19,82 @@ pub struct Todo{
     description:Option<String>,
     status:String
 }
-#[derive(Serialize)]
+#[derive(Deserialize)]
 pub struct TypeDbError{
     error:String
 }
+
+#[derive(Deserialize)]
+pub struct UpdateTitleStruct{
+    id:i32,
+    title:String
+}
+#[post("/todo/title/update")]
+pub async fn update_todo_title(body: Json<UpdateTitleStruct>, db: Data<MySqlPool>) -> impl Responder {
+    let response = Sqlx::query(
+        "UPDATE todos SET title = ? WHERE id = ?"
+    ).bind(&body.title)
+    .bind(&body.id)
+    .execute(&**db)
+    .await;
+
+    match response {
+        Ok(_) => HttpResponse::Ok().json("Title updated successfully"),
+        Err(e) => HttpResponse::InternalServerError().json(TypeDbError {
+            error: e.to_string(),
+        }),
+    }
+}
+
+#[derive(Serialize)]
+pub struct UpdateDescriptionStruct{
+    id:i32,
+    title:String
+}
+
+#[post("/todo/description/update")]
+
+pub async fn update_todo_description(body: Json<UpdateDescriptionStruct>, db: Data<MySqlPool>) -> impl Responder {
+    let response = Sqlx::query(
+        "UPDATE todos SET description = ? WHERE id = ?"
+    ).bind(&body.description)
+    .bind(&body.id)
+    .execute(&**db)
+    .await;
+
+    match response {
+        Ok(_) => HttpResponse::Ok().json("Description updated successfully"),
+        Err(e) => HttpResponse::InternalServerError().json(TypeDbError {
+            error: e.to_string(),
+        }),
+    }
+}
+
+#[derive(Deserialize)]
+pub struct Id {
+    id: i32,
+}
+
+#[post("/todo/mark/completed")]
+
+pub async fn mark_todo_completed(id: Json<Id>, db: Data<MySqlPool>) -> impl Responder {
+    let response = Sqlx::query(
+        "UPDATE todos SET status = 'Completed' WHERE id = ?"
+    ).bind("completed")
+    .bind(&id.id)
+    .execute(&**db)
+    .await;
+
+    match response {
+        Ok(_) => HttpResponse::Ok().json("Todo marked as completed"),
+        Err(e) => HttpResponse::InternalServerError().json(TypeDbError {
+            error: e.to_string(),
+        }),
+    }
+}
+
+
+
 
 #[post("/todo/create")]
 pub async fn create_new_todo(db:Data<MySqlPool>, body: Json<CreateNewTodo>) -> impl Responder{
